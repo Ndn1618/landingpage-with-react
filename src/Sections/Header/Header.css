@@ -1,0 +1,17 @@
+/* Header Styles
+---------------------------------*/
+
+#header_outer{
+	background:#ffffff;
+	padding:30px 0px;
+	}
+
+.header_section{
+	position:relative;
+	}
+
+.logo{
+	float:left;
+	}
+
+.res-nav_click{ display:none;}
