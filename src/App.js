@@ -1,6 +1,4 @@
-import { useState, useEffect } from 'react'
-
-import Loader from './Components/Loader/Loader'
+import { useEffect } from 'react'
 import './App.css';
 import Header from './Sections/Header/Header'
 import TopContent from './Sections/TopContent/TopContent';
@@ -13,29 +11,29 @@ import Contact from './Sections/Contact/Contact'
 
 function App() {
 
-  const [isLoading, setLoading] = useState(true);
-  const [isVisible, setVisibility] = useState('none');
+  function fakeRequest() {
+    return new Promise(resolve => setTimeout(() => resolve(), 2500));
+  }
 
   useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-      setVisibility('block');
-    }, 2500)
+    fakeRequest().then(() => {
+      const el = document.querySelector(".loader-container");
+      if (el) {
+        el.remove();
+      }
+    });
   }, []);
 
   return (
     <>
-      {isLoading && <Loader />}
-      <div style={{ display: { isVisible } }}>
-        <Header />
-        <TopContent />
-        <Service />
-        <WorkOuter />
-        <Portfolio />
-        <Clients />
-        <Team />
-        <Contact />
-      </div>
+      <Header />
+      <TopContent />
+      <Service />
+      <WorkOuter />
+      <Portfolio />
+      <Clients />
+      <Team />
+      <Contact />
     </>
   );
 }
