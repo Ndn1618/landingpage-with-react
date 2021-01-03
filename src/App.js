@@ -4,6 +4,7 @@ import TopContent from './Sections/TopContent/TopContent';
 import Service from './Sections/Service/Service'
 import WorkOuter from './Sections/WorkOuter/WorkOuter'
 import Portfolio from './Sections/Portfolio/Portfolio'
+import Clients from './Sections/Clients/Clients'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Service />
       <WorkOuter />
       <Portfolio />
+      <Clients />
     </>
   );
 }
