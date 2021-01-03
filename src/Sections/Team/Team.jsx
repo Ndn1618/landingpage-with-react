@@ -1,4 +1,8 @@
 import './Team.css'
+import '../../FontAwesome/font-awesome.css'
+import TeamLeaderPic1 from '../../img/team-leader-pic1.jpg'
+import TeamLeaderPic2 from '../../img/team-leader-pic2.jpg'
+import TeamLeaderPic3 from '../../img/team-leader-pic3.jpg'
 
 function Team() {
   return (
@@ -11,7 +15,7 @@ function Team() {
             <div class="team-leader-box">
               <div class="team-leader wow fadeInDown delay-03s">
                 <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
-                <img src="img/team-leader-pic1.jpg" alt="" />
+                <img src={TeamLeaderPic1} alt="" />
                 <ul>
                   <li><a href="javascript:void(0)" class="fa-twitter"></a></li>
                   <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
@@ -26,7 +30,7 @@ function Team() {
             <div class="team-leader-box">
               <div class="team-leader  wow fadeInDown delay-06s">
                 <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
-                <img src="img/team-leader-pic2.jpg" alt="" />
+                <img src={TeamLeaderPic2} alt="" />
                 <ul>
                   <li><a href="javascript:void(0)" class="fa-twitter"></a></li>
                   <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
@@ -41,7 +45,7 @@ function Team() {
             <div class="team-leader-box">
               <div class="team-leader wow fadeInDown delay-09s">
                 <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
-                <img src="img/team-leader-pic3.jpg" alt="" />
+                <img src={TeamLeaderPic3} alt="" />
                 <ul>
                   <li><a href="javascript:void(0)" class="fa-twitter"></a></li>
                   <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
