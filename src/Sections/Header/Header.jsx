@@ -7,16 +7,16 @@ function Header() {
   return (
     <>
       <header id="header_outer">
-        <div class="container">
-          <div class="header_section">
-            <div class="logo">
+        <div className="container">
+          <div className="header_section">
+            <div className="logo">
               <NavLink to="/">
                 <img src={logo} alt="" />
               </NavLink>
             </div>
             <Nav />
-            <NavLink class="res-nav_click animated wobble wow" to="#" onClick={e => e.preventDefault()}>
-              <i class="fa-bars"></i>
+            <NavLink className="res-nav_click animated wobble wow" to="#" onClick={e => e.preventDefault()}>
+              <i className="fa-bars"></i>
             </NavLink>
           </div>
         </div>
