@@ -14,35 +14,28 @@ import Contact from './Sections/Contact/Contact'
 function App() {
 
   const [isLoading, setLoading] = useState(true);
-
-  function fakeRequest() {
-    return new Promise(resolve => setTimeout(() => resolve(), 2500));
-  }
+  const [isVisible, setVisibility] = useState('none');
 
   useEffect(() => {
-    fakeRequest().then(() => {
+    setTimeout(() => {
       setLoading(false);
-    });
+      setVisibility('block');
+    }, 2500)
   }, []);
 
   return (
     <>
-      {
-        isLoading ? (
-          <Loader />
-        ) : (
-            <>
-              <Header />
-              <TopContent />
-              <Service />
-              <WorkOuter />
-              <Portfolio />
-              <Clients />
-              <Team />
-              <Contact />
-            </>
-          )
-      }
+      {isLoading && <Loader />}
+      <div style={{ display: { isVisible } }}>
+        <Header />
+        <TopContent />
+        <Service />
+        <WorkOuter />
+        <Portfolio />
+        <Clients />
+        <Team />
+        <Contact />
+      </div>
     </>
   );
 }
