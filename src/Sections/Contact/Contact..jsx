@@ -1,60 +1,62 @@
 import './Contact.css'
 
+import { Link } from 'react-router-dom'
+
 function Contact() {
   return (
     <>
-      <footer class="footer_section" id="contact">
-        <div class="container">
-          <section class="main-section contact" id="contact">
-            <div class="contact_section">
+      <footer className="footer_section" id="contact">
+        <div className="container">
+          <section className="main-section contact" id="contact">
+            <div className="contact_section">
               <h2>Contact Us</h2>
-              <div class="row">
-                <div class="col-lg-4">
-                  <div class="contact_block">
-                    <div class="contact_block_icon rollIn animated wow"><span><i class="fa-home"></i></span></div>
+              <div className="row">
+                <div className="col-lg-4">
+                  <div className="contact_block">
+                    <div className="contact_block_icon rollIn animated wow"><span><i className="fa-home"></i></span></div>
                     <span> 308 Negra Arroyo Lane, <br />
               Albuquerque, NM, 87104 </span> </div>
                 </div>
-                <div class="col-lg-4">
-                  <div class="contact_block">
-                    <div class="contact_block_icon icon2 rollIn animated wow"><span><i class="fa-phone"></i></span></div>
+                <div className="col-lg-4">
+                  <div className="contact_block">
+                    <div className="contact_block_icon icon2 rollIn animated wow"><span><i className="fa-phone"></i></span></div>
                     <span> 1-800-BOO-YAHH </span> </div>
                 </div>
-                <div class="col-lg-4">
-                  <div class="contact_block">
-                    <div class="contact_block_icon icon3 rollIn animated wow"><span><i class="fa-pencil"></i></span></div>
-                    <span> <a href="mailto:hello@butterfly.com"> hello@butterfly.com</a> </span> </div>
+                <div className="col-lg-4">
+                  <div className="contact_block">
+                    <div className="contact_block_icon icon3 rollIn animated wow"><span><i className="fa-pencil"></i></span></div>
+                    <span> <Link to="mailto:hello@butterfly.com"> hello@butterfly.com</Link> </span> </div>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-lg-6 wow fadeInLeft">
-                <div class="contact-info-box address clearfix">
+            <div className="row">
+              <div className="col-lg-6 wow fadeInLeft">
+                <div className="contact-info-box address clearfix">
                   <h3>Don’t be shy. Say hello!</h3>
                   <p>Accusantium quam, aliquam ultricies eget tempor id, aliquam eget nibh et. Maecen aliquam, risus at semper. Accusantium quam, aliquam ultricies eget tempor id, aliquam eget nibh et. Maecen aliquam, risus at semper.</p>
                   <p>Accusantium quam, aliquam ultricies eget tempor id, aliquam eget nibh et. Maecen aliquampor id.</p>
                 </div>
-                <ul class="social-link">
-                  <li class="twitter animated bounceIn wow delay-02s"><a href="javascript:void(0)"><i class="fa-twitter"></i></a></li>
-                  <li class="facebook animated bounceIn wow delay-03s"><a href="javascript:void(0)"><i class="fa-facebook"></i></a></li>
-                  <li class="pinterest animated bounceIn wow delay-04s"><a href="javascript:void(0)"><i class="fa-pinterest"></i></a></li>
-                  <li class="gplus animated bounceIn wow delay-05s"><a href="javascript:void(0)"><i class="fa-google-plus"></i></a></li>
-                  <li class="dribbble animated bounceIn wow delay-06s"><a href="javascript:void(0)"><i class="fa-dribbble"></i></a></li>
+                <ul className="social-link">
+                  <li className="twitter animated bounceIn wow delay-02s"><Link to="#"><i className="fa-twitter"></i></Link></li>
+                  <li className="facebook animated bounceIn wow delay-03s"><Link to="#"><i className="fa-facebook"></i></Link></li>
+                  <li className="pinterest animated bounceIn wow delay-04s"><Link to="#"><i className="fa-pinterest"></i></Link></li>
+                  <li className="gplus animated bounceIn wow delay-05s"><Link to="#"><i className="fa-google-plus"></i></Link></li>
+                  <li className="dribbble animated bounceIn wow delay-06s"><Link to="#"><i className="fa-dribbble"></i></Link></li>
                 </ul>
               </div>
-              <div class="col-lg-6 wow fadeInUp delay-06s">
-                <div class="form">
-                  <input class="input-text animated wow flipInY delay-02s" type="text" name="" value="Your Name *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" />
-                  <input class="input-text animated wow flipInY delay-04s" type="text" name="" value="Your E-mail *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" />
-                  <textarea class="input-text text-area animated wow flipInY delay-06s" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
-                  <input class="input-btn animated wow flipInY delay-08s" type="submit" value="send message" />
+              <div className="col-lg-6 wow fadeInUp delay-06s">
+                <div className="form">
+                  <input className="input-text animated wow flipInY delay-02s" type="text" name="" value="Your Name *" />
+                  <input className="input-text animated wow flipInY delay-04s" type="text" name="" value="Your E-mail *" />
+                  <textarea className="input-text text-area animated wow flipInY delay-06s" cols="0" rows="0" >Your Message *</textarea>
+                  <input className="input-btn animated wow flipInY delay-08s" type="submit" value="send message" />
                 </div>
               </div>
             </div>
           </section>
         </div>
-        <div class="container">
-          <div class="footer_bottom"> <span>Copyright © 2015 | <a href="http://bootstraptaste.com/">Bootstrap Themes</a> by BootstrapTaste </span> </div>
+        <div className="container">
+          <div className="footer_bottom"> <span>Copyright © 2015 | <Link to="http://bootstraptaste.com/">Bootstrap Themes</Link> by BootstrapTaste </span> </div>
         </div>
       </footer>
     </>
