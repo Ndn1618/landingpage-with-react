@@ -6,6 +6,7 @@ import WorkOuter from './Sections/WorkOuter/WorkOuter'
 import Portfolio from './Sections/Portfolio/Portfolio'
 import Clients from './Sections/Clients/Clients'
 import Team from './Sections/Team/Team'
+import Contact from './Sections/Contact/Contact'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Portfolio />
       <Clients />
       <Team />
+      <Contact />
     </>
   );
 }
