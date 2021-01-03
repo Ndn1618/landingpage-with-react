@@ -46,9 +46,9 @@ function Contact() {
               </div>
               <div className="col-lg-6 wow fadeInUp delay-06s">
                 <div className="form">
-                  <input className="input-text animated wow flipInY delay-02s" type="text" name="" value="Your Name *" />
-                  <input className="input-text animated wow flipInY delay-04s" type="text" name="" value="Your E-mail *" />
-                  <textarea className="input-text text-area animated wow flipInY delay-06s" cols="0" rows="0" >Your Message *</textarea>
+                  <input className="input-text animated wow flipInY delay-02s" type="text" name="" placeholder="Your Name *" />
+                  <input className="input-text animated wow flipInY delay-04s" type="text" name="" placeholder="Your E-mail *" />
+                  <textarea className="input-text text-area animated wow flipInY delay-06s" cols="0" rows="0" placeholder="Your Message*" ></textarea>
                   <input className="input-btn animated wow flipInY delay-08s" type="submit" value="send message" />
                 </div>
               </div>

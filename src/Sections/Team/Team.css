@@ -1,5 +1,11 @@
 /* Team
 ---------------------------------*/
+
+.team {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
 .team-leader-block{
 	max-width:993px;
 	margin:0 auto;
